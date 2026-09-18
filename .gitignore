@@ -1,0 +1,5 @@
+node_modules/
+.DS_Store
+*.log
+.al-grano-active
+settings.json.bak*
