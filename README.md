@@ -1,41 +1,44 @@
 <p align="center">
-  <strong>al-grano</strong>
+  <img src="banner.svg" alt="al-grano" width="100%" />
 </p>
 <p align="center">
   <em>Ve al grano. Respuesta primero, cero relleno, largo con tope.</em>
 </p>
+<p align="center">
+  🇪🇸 Español · <a href="README.en.md">🇬🇧 English</a>
+</p>
 
-## What it does
+## Qué hace
 
-An output skill for your coding assistant. It merges two disciplines into one:
+Un skill de estilo de salida para tu asistente de código. Fusiona dos disciplinas en una:
 
-- **Terse** (caveman lineage): drops articles, filler, pleasantries, and empty hedging. Keeps every bit of technical substance. Code, commands, and error strings stay verbatim.
-- **Actionable** (ADHD-friendly, inspired by [`ayghri/i-have-adhd`](https://github.com/ayghri/i-have-adhd)): answer on line one, numbered steps, state restated across turns, no preamble, no recap, no closer.
+- **Terso** (linaje caveman): elimina artículos, relleno, cortesías y hedging vacío. Conserva toda la sustancia técnica. Código, comandos y mensajes de error quedan tal cual.
+- **Accionable** (ADHD-friendly, inspirado en [`ayghri/i-have-adhd`](https://github.com/ayghri/i-have-adhd)): respuesta en la línea uno, pasos numerados, estado repetido entre turnos, sin preámbulo, sin recap, sin cierre.
 
-Plus a hard budget: a task close is 10 lines or fewer, one table max, findings one line each with the detail pushed to the commit or the devlog.
+Más un presupuesto duro: el cierre de una tarea son 10 líneas o menos, una tabla máximo, hallazgos de una línea cada uno con el detalle empujado al commit o al devlog.
 
-It fires automatically on session start and stays on until you say `para al-grano`, `stop al-grano`, or `normal mode`.
+Se activa solo al arrancar la sesión y sigue activo hasta que digas `para al-grano`, `stop al-grano` o `normal mode`.
 
-## Before / after
+## Antes / después
 
-**Before**
+**Antes**
 > Great question! Let me look at this. Your auth flow has a few moving pieces: the middleware, the token verification, and the cookie handling. Looking at `src/auth.ts`, the `verifyToken` function around lines 42-58 seems to use an older API. One approach would be to update the package and rewrite that function. After that you'd want to run the auth tests. By the way, your dependencies look stale overall. Hope this helps, let me know if you want to dig deeper!
 
-**After**
+**Después**
 > Bug in `src/auth.ts:42`. Token check uses `<`, needs `<=`.
 > 1. Edit `src/auth.ts:42`, change `<` to `<=`.
 > 2. Run `npm test -- auth.spec.ts`.
 >
 > Aparte: la dependencia está vieja. ¿La toco después?
 
-## Install
+## Instalación
 
-See [INSTALL.md](INSTALL.md). Claude Code and Codex are supported. The skill Markdown alone works on any runtime that imports a `SKILL.md`.
+Ver [INSTALL.md](INSTALL.md). Soporta Claude Code y Codex. El Markdown del skill por sí solo funciona en cualquier runtime que importe un `SKILL.md`.
 
-## Turn it off
+## Apagarlo
 
-Say `para al-grano` or `normal mode`. Say `al grano` to turn it back on.
+Di `para al-grano` o `normal mode`. Di `al grano` para volver a activarlo.
 
-## License
+## Licencia
 
-MIT. See [LICENSE](LICENSE).
+MIT. Ver [LICENSE](LICENSE).

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="al-grano — answer first, zero filler, length capped">
+  <rect width="1200" height="300" fill="#0A0A0A"/>
+  <rect x="0" y="0" width="8" height="300" fill="#F5C518"/>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+    <text x="96" y="150" font-size="40" fill="#F5C518" font-weight="700">&#8250;</text>
+    <text x="150" y="158" font-size="88" fill="#FFFFFF" font-weight="700" letter-spacing="-2">al-grano</text>
+    <text x="152" y="210" font-size="27" fill="#9A9A9A">answer first &#183; drop dead words &#183; length capped</text>
+    <text x="152" y="250" font-size="20" fill="#5A5A5A">terse + actionable output style for coding agents</text>
+  </g>
+</svg>
